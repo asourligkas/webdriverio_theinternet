@@ -1,6 +1,6 @@
 const firstPage = require('../pages/internet.page')
 
-describe ("na to allaksw", function() {
+describe ("first test", function() {
     it('should scroll to the footer', () => {
         browser.url('/')
         firstPage.pageHeader.waitForDisplayed()
