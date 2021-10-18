@@ -1,3 +1,4 @@
+const { assert } = require('console')
 const firstPage = require('../pages/internet.page')
 
 describe ("first test", function() {
@@ -6,6 +7,6 @@ describe ("first test", function() {
         firstPage.pageHeader.waitForDisplayed()
         firstPage.pageFooter.scrollIntoView()
         firstPage.scrollToPageFooter()
-        expect(firstPage.pageFooter).toBeDisplayedInViewport()
+        assert(true, firstPage.pageFooter.isDisplayed())
     })
 })
